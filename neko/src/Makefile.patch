@@ -1,0 +1,15 @@
+--- Makefile	1997-07-02 17:58:30.000000000 +0300
++++ Makefile.new	2016-07-23 11:49:14.734209458 +0300
+@@ -1,10 +1,10 @@
+-CC = m68k-palmos-coff-gcc
++CC = m68k-palmos-gcc
+ CFLAGS = -Wall -O2 -g -fno-builtin
+ CSFLAGS = -S $(CFLAGS)
+ 
+ PILRC = pilrc
+ TXT2BITM = txt2bitm
+-OBJRES = m68k-palmos-coff-obj-res
++OBJRES = m68k-palmos-obj-res
+ BUILDPRC = build-prc
+ 
+ PROGNAME = neko

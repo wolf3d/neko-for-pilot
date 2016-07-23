@@ -1,0 +1,12 @@
+--- neko.c	1997-07-02 18:10:08.000000000 +0300
++++ neko.c.new	2016-07-23 11:56:47.646217961 +0300
+@@ -60,8 +60,7 @@
+ 
+ #define ABS(x) ((x) >= 0 ? (x) : -(x))
+ 
+-#define TRIM(x, min, max) \
+-    if ((x) < (min)) { (x) = (min); } else if ((x) > (max)) { (x) = (max); }
++#define TRIM(x, min, max) if ((x) < (min)) { (x) = (min); } else if ((x) > (max)) { (x) = (max); }
+ 
+ /*
+  * global variables
