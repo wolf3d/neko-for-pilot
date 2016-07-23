@@ -1,10 +1,10 @@
-CC = m68k-palmos-coff-gcc
+CC = m68k-palmos-gcc
 CFLAGS = -Wall -O2 -g -fno-builtin
 CSFLAGS = -S $(CFLAGS)
 
 PILRC = pilrc
 TXT2BITM = txt2bitm
-OBJRES = m68k-palmos-coff-obj-res
+OBJRES = m68k-palmos-obj-res
 BUILDPRC = build-prc
 
 PROGNAME = neko
