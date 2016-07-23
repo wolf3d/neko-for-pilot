@@ -7,7 +7,8 @@ script:
 - docker run -it -v $(pwd):/root/neko-for-pilot wolf3d/palmos.sdk.3.1 /bin/sh -c "cd
   /root/neko-for-pilot/neko/src && make"
 before_deploy:
-  - ls -Rl *
+- ls -Rl *
+- chmod 744 /root/neko-for-pilot/neko/src/neko.prc
 deploy:
   provider: releases
   api_key:
