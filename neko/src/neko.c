@@ -60,7 +60,8 @@
 
 #define ABS(x) ((x) >= 0 ? (x) : -(x))
 
-#define TRIM(x, min, max) if ((x) < (min)) { (x) = (min); } else if ((x) > (max)) { (x) = (max); }
+#define TRIM(x, min, max) \
+    if ((x) < (min)) { (x) = (min); } else if ((x) > (max)) { (x) = (max); }
 
 /*
  * global variables
