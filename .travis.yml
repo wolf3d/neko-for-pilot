@@ -8,12 +8,12 @@ script:
   /root/neko-for-pilot/neko/src && make"
 before_deploy:
 - ls -Rl *
-- chmod 744 /root/neko-for-pilot/neko/src/neko.prc
+- chmod 744 neko-for-pilot/neko/src/neko.prc
 deploy:
   provider: releases
   api_key:
     secure: cJtDOiX54w9elc3/x7HXxrbpnIKyf+odXXeBFcLXNPfA6aOOa5x0gLAqJZKN9bWSCSx8HSMLLWeLzB1bXTfynsaVFi/YyobjlcacecbjqwULHVBRC+0DPmVWK43VD/UIktm8f2RoQ50z9f8iIg1mCzsEfQ928dqsM91MnUYhf9PxLFvNVP4VI6UklNhp55I1Fl+05IYXAfbyQxkI6nhbJQBqAW1sWOf7jiEyZV4nAzM9SeyfCgAOgeUH4HEM3e+E+Rl7hiR2kgmh/tkTauUsbZnELRAYl3zLGocWJSRV/JLlxDx14hAuRRMSfYOppRRLPUAYsNAmZvpgxG2agIwPxEibxgEc+ew3fy/1yU4LI4gQ60mgzIrhdxFklPbd9sfarFbCIfZKItvB7F55gGEe8CoGe45t4k9ohdESNK64XfUNfFAJv/gLHWodxQIXWDRHfUVYO6GnTi/RQl/1pzx+EsSqtQr4L5sI1mANndg7Wsvqg5ukL1o30KLfrFflIHsSzf2ZQ/V4BYDvmLZvgA2tlVvjgVEcnw3G7LakN6feNWuxZF70UGWXdJW9xdqGm9lpxwkELK+AFDGEIKX9zPgDMf/P7tu7jKp44cD7i/GDHMMnRd9p332eAi8EkedCLIwbivelbtuxn2beeZHciPV6F6yHwScKt56FJwHY4MlSR98=
-  file: "/root/neko-for-pilot/neko/src/neko.prc"
+  file: "neko-for-pilot/neko/src/neko.prc"
   skip_cleanup: true
   on:
     repo: wolf3d/neko-for-pilot
