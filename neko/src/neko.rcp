@@ -1,0 +1,37 @@
+#include "neko.h"
+
+form id MAIN_FORM_ID at (0 0 WINDOW_WIDTH WINDOW_HEIGHT)
+begin
+    title "Neko"
+    checkbox "" id BIRD_CURSOR_ID at (36 0 36 14) group 1
+    formbitmap at (52 0) bitmap BIRD_BITMAP_ID
+    checkbox "" id MOUSE_CURSOR_ID at (72 0 36 14) group 1 checked
+    formbitmap at (88 0) bitmap MOUSE_BITMAP_ID
+    checkbox "" id FISH_CURSOR_ID at (108 0 36 14) group 1
+    formbitmap at (124 0) bitmap FISH_BITMAP_ID
+    button "?" id ABOUT_BUTTON_ID at (148 2 10 9) font 1
+end
+
+form id ABOUT_FORM_ID at (2 80 156 78)
+modal
+helpid ABOUT_HELP_ID
+begin
+    title "About Neko"
+    formbitmap at (8 20) bitmap NEKO_KAKI2_ID
+    label "Neko for Pilot" id ABOUT_LABEL1_ID at (50 18) font 1
+    label "ver 1.0 (Jul 2, 1997)" id ABOUT_LABEL2_ID at (50 30) font 1
+    label "This is a free software." id ABOUT_LABEL3_ID at (50 46)
+    button "OK" id ABOUT_OK_BUTTON_ID at (5 62 37 12)
+end
+
+string id ABOUT_HELP_ID "neko DA (Macintosh version)\n" \
+			"\251 1989 by Kenji Gotoh\n" \
+			"\n" \
+			"xneko (X11 version)\n" \
+			"\251 1990 by Masayuki Koba\n" \
+			"\n" \
+			"Pilot version\n" \
+			"\251 1997 by Hoshi Takanori\n" \
+			"\n" \
+			"http://www.sra.co.jp/\n" \
+			"\tpeople/hoshi/neko.html"
