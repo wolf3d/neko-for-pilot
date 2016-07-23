@@ -7,4 +7,4 @@ before_install:
 - docker pull wolf3d/palmos.sdk.3.1
 
 script:
-- docker run -it -v $(pwd):/root/neko-for-pilot wolf3d/palmos.sdk.3.1 /bin/sh -c "cd /root/neko-for-pilot;ls -lrta"
+- docker run -it -v $(pwd):/root/neko-for-pilot wolf3d/palmos.sdk.3.1 /bin/sh -c "cd /root/neko-for-pilot/neko/src && make"
