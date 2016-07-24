@@ -8,7 +8,7 @@ script:
   /root/neko-for-pilot/neko/src && make"
 before_deploy:
 - ls -Rl *
-- chown travis:travis neko/src/neko.prc
+- chown travis:travis ./neko/src/neko.prc
 deploy:
   provider: releases
   api_key:
